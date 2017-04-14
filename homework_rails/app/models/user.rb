@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :birthday, :email, :first_name, :last_name, :password, :username
+  attr_accessible :birthday, :created_at, :email, :first_name, :id, :last_name, :password, :updated_at, :username
   has_many :posts
   has_many :images, :as => :imageable
 
